@@ -5,19 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="73dp">
 
     <FrameLayout
         android:id="@+id/frameLayout2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="143dp"
+        android:layout_height="201dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gridLayout"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -103,107 +99,102 @@
         android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="parent">
 
         <CheckBox
             android:id="@+id/check_mustache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="checkClicked"
             android:text="Mustache"
             app:layout_column="1"
-            app:layout_row="2"
-            android:onClick="checkClicked" />
+            app:layout_row="2" />
 
         <CheckBox
             android:id="@+id/check_mouth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="checkClicked"
             android:text="Mouth"
             app:layout_column="1"
-            app:layout_row="1"
-            android:onClick="checkClicked" />
+            app:layout_row="1" />
 
         <CheckBox
             android:id="@+id/check_hat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="checkClicked"
             android:text="Hat"
             app:layout_column="1"
-            app:layout_row="0"
-            android:onClick="checkClicked" />
+            app:layout_row="0" />
 
         <CheckBox
             android:id="@+id/check_shoes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="checkClicked"
             android:text="Shoes"
             app:layout_column="1"
-            app:layout_row="4"
-            android:onClick="checkClicked" />
+            app:layout_row="4" />
 
         <CheckBox
             android:id="@+id/check_nose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="checkClicked"
             android:text="Nose"
             app:layout_column="1"
-            app:layout_row="3"
-            android:onClick="checkClicked" />
+            app:layout_row="3" />
 
         <CheckBox
             android:id="@+id/check_arms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
+            android:onClick="checkClicked"
             android:text="Arms"
             app:layout_column="0"
-            app:layout_row="0"
-            android:onClick="checkClicked" />
+            app:layout_row="0" />
 
         <CheckBox
             android:id="@+id/check_ears"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="checkClicked"
             android:text="Ears"
             app:layout_column="0"
-            app:layout_row="1"
-            android:onClick="checkClicked" />
+            app:layout_row="1" />
 
         <CheckBox
             android:id="@+id/check_eyebrows"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="checkClicked"
             android:text="Eyebrows"
             app:layout_column="0"
-            app:layout_row="2"
-            android:onClick="checkClicked" />
+            app:layout_row="2" />
 
         <CheckBox
             android:id="@+id/check_eyes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="checkClicked"
             android:text="Eyes"
             app:layout_column="0"
-            app:layout_row="3"
-            android:onClick="checkClicked" />
+            app:layout_row="3" />
 
         <CheckBox
             android:id="@+id/check_glasses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="checkClicked"
             android:text="Glasses"
             app:layout_column="0"
-            app:layout_row="4"
-            android:onClick="checkClicked" />
+            app:layout_row="4" />
     </android.support.v7.widget.GridLayout>
 
 </android.support.constraint.ConstraintLayout>
