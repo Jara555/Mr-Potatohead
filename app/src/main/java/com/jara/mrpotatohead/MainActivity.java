@@ -1,3 +1,14 @@
+/****************************************************************************
+ * MainActivity.java
+ *
+ * appstudio mprog
+ * Jara Linders
+ * 12-04-2018
+ *
+ * This program implements the Mr. Potatohead app for Android phones. All methods
+ * of the MainActivity can be found in this program.
+ ***************************************************************************/
+
 package com.jara.mrpotatohead;
 
 import android.support.v7.app.AppCompatActivity;
